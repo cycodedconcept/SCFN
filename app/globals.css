@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap");
+
+.active_class {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.grid_col-fix {
+  display: grid;
+  grid-template-columns: 22.5% 50% 22.5%;
+  place-items: center center;
+  gap: 3rem;
+}
+
+.grid_special {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+@layer components {
+  .grid_col_footer {
+    display: grid;
+    grid-template-columns: repeat(
+      5,
+      1fr
+    ); /* Adjust the column percentages as needed */
+  }
+  .box_shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Horizontal offset, Vertical offset, Blur radius, Color */
+  }
+  .box_shadow_hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, Vertical offset, Blur radius, Color */
+  }
+  .trans_animate {
+    @apply duration-150 ease-in-out transition-all;
+  }
+  .text_shadow_ {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  .show_more_nav {
+    position: absolute;
+    top: 80%;
+    z-index: 50;
+  }
+}
