@@ -15,6 +15,7 @@ module.exports = {
         primary_faded_grey: "#434343",
         primary_green: "#4CAF50",
         primary_blue: "#159CD8",
+        primary_faded_dark: "#021E1E",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],

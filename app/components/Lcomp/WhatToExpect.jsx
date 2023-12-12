@@ -8,7 +8,7 @@ const WhatToExpect = () => {
           src="./assets/bmt/women.png"
           alt=""
           className="object-cover w-[80%]"
-        />
+        /> 
       </div>
       <div className="w-1/2 flex flex-col justify-center p-10">
         <h2 className="w-[85%] text-[40px] leading-[1.2] capitalize font-[600] text-primary_red">
